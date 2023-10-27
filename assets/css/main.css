@@ -13,14 +13,14 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Amatic SC", sans-serif;
+  --font-primary: 'Kanit', sans-serif;
   --font-secondary: 'Kanit', sans-serif;
 }
 
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #287EEF;
   --color-secondary: #37373f;
 }
 
@@ -919,6 +919,107 @@ section {
 }
 
 /*--------------------------------------------------------------
+# curso Section
+--------------------------------------------------------------*/
+.curso .nav-tabs {
+  border: 0;
+}
+
+.curso .nav-link {
+  margin: 0 10px;
+  padding: 10px 5px;
+  transition: 0.3s;
+  color: var(--color-secondary);
+  border-radius: 0;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  border-bottom: 2px solid #b6b6bf;
+}
+
+@media (max-width: 575px) {
+  .curso .nav-link {
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+}
+
+.curso .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.curso .nav-link h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  font-family: var(--font-secondary);
+}
+
+@media (max-width: 575px) {
+  .curso .nav-link h4 {
+    font-size: 16px;
+  }
+}
+
+.curso .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.curso .nav-link.active {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.curso .tab-content .tab-header {
+  padding: 30px 0;
+}
+
+.curso .tab-content .tab-header p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #676775;
+  margin-bottom: 0;
+}
+
+.curso .tab-content .tab-header h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.curso .tab-content .curso-item {
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+.curso .tab-content .curso-item .curso-img {
+  padding: 0 60px;
+  margin-bottom: 15px;
+}
+
+.curso .tab-content .curso-item h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  font-family: var(--font-secondary);
+  font-weight: 30px;
+  margin-bottom: 5px;
+}
+
+.curso .tab-content .curso-item .ingredients {
+  font-family: var(--font-secondary);
+  color: #8d8d9b;
+  margin-bottom: 5px;
+}
+
+.curso .tab-content .curso-item .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .section-header {
@@ -1494,7 +1595,7 @@ section {
 }
 
 .hero h2 {
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
   color: var(--color-secondary);
